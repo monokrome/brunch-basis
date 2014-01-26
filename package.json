@@ -28,7 +28,7 @@
     "javascript-brunch": ">= 1.0 < 1.9",
     "uglify-js-brunch": ">= 1.0 < 1.9",
 
-    "imageoptmizer-brunch": ">= 1.0 < 1.9",
+    "imageoptmizer-brunch": "0.0.4",
     "auto-reload-brunch": ">= 1.0 < 1.9"
   },
   "devDependencies": {
