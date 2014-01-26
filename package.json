@@ -1,0 +1,36 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "author": "Your Name",
+  "description": "Description",
+  "contributor": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "jade-brunch": ">= 1.0 < 1.9",
+
+    "normalize-css": "2.1.x",
+    "stylus-brunch": ">= 1.0 < 1.9",
+    "css-brunch": ">= 1.0 < 1.9",
+    "clean-css-brunch": ">= 1.0 < 1.9",
+
+    "lodash": "2.4.x",
+    "jquery": "2.1.x",
+    "livescript-brunch": ">= 1.0 < 1.9",
+    "jshint-brunch": ">= 1.0 < 1.9",
+    "javascript-brunch": ">= 1.0 < 1.9",
+    "uglify-js-brunch": ">= 1.0 < 1.9",
+
+    "imageoptmizer-brunch": ">= 1.0 < 1.9",
+    "auto-reload-brunch": ">= 1.0 < 1.9"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name":         "your-app",
+  "version":      "0.0.1",
+  "main":         "public/main.js",
+  "dependencies": {},
+  "overrides":    {}
+}

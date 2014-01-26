@@ -1,0 +1,55 @@
+
+// ===========
+// BASIS MENUS
+// ===========
+
+
+$basis_menu
+  margin  0
+  padding 0
+  li
+    list-style none none
+    margin     0
+    padding    0
+  a
+    &, &:link, &:visited, &:hover, &:active, &:focus
+      display         block
+      text-decoration none
+  .basis-menu--parent:hover
+    .basis-menu--submenu
+      visibility visible
+  .basis-menu--submenu
+    padding    0
+    visibility hidden
+    z-index    1
+    li
+      display block
+
+$basis_menu_horizontal_floated
+  @extends $basis_menu
+  li
+    float    left
+    position relative
+  .basis-menu--submenu
+    position absolute
+
+$basis_menu_horizontal_justified
+  @extends   $basis_menu
+  position   relative
+  text-align justify
+  li
+    display    inline-block
+    text-align left
+  .basis-menu--submenu
+    position absolute
+  &:after
+    content ''
+    display inline-block
+    width   100%
+
+
+// -----------------------------------------------------------------------------
+
+
+// .basis-menu
+//   @extends $basis_menu_horizontal

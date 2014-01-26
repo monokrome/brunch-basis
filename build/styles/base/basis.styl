@@ -1,0 +1,99 @@
+
+// =====
+// BASIS
+// =====
+
+
+@import 'vendor/nib'
+@import 'vendor/normalize'
+@import 'vendor/grid'
+@import 'basis-colors'
+@import 'basis-fonts'
+@import 'basis-menus'
+
+
+// -----------------------------------------------------------------------------
+
+
+gradient(start_color, finish_color)
+  background-color finish_color
+  background-image linear-gradient(top, start_color, finish_color)
+  filter           unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr='#{start_color}', endColorstr='#{finish_color}')")
+  -ms-filter       "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{start_color}', endColorstr='#{finish_color}')"
+
+
+// -----------------------------------------------------------------------------
+
+
+/**
+ * Cross-browser float clearing.
+ *
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ * http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
+ */
+$clear
+  clearfix()
+
+
+// -----------------------------------------------------------------------------
+
+
+// @mixin background-clip-border()
+//   -webkit-background-clip border-box
+//      -moz-background-clip border
+//           background-clip border-box
+
+
+// -----------------------------------------------------------------------------
+
+
+// @mixin background-clip-padding()
+//   // Useful if you don't want a bg color from leaking outside the border.
+//   // http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
+//   -webkit-background-clip padding-box
+//      -moz-background-clip padding
+//           background-clip padding-box
+
+
+
+// -----------------------------------------------------------------------------
+
+
+// // http://css3please.com/
+// // http://css-tricks.com/snippets/css/useful-css3-less-mixins/#comment-135120
+// @mixin opacity($opacity)
+//   opacity: $opacity
+
+//   $ie_opacity: $opacity * 100
+
+//   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=${ie_opacity})"         // IE 8
+//       filter: "alpha(opacity=${ie_opacity})"                                           // IE 6-7
+
+// http://learnboost.github.io/stylus/docs/mixins.html
+// support-for-ie ?= true
+// opacity(n)
+//   opacity n
+//   if support-for-ie
+//     filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+// #logo
+//   &:hover
+//     opacity 0.5
+
+
+// -----------------------------------------------------------------------------
+
+
+// // http://kimili.com/journal/rgba-hsla-css-generator-for-internet-explorer/
+// // http://www.beijingyoung.com/articles/rgba-argb-converter/
+// // http://kilianvalkhof.com/2010/css-xhtml/how-to-use-rgba-in-ie/
+// mixin background-color-transparency (red, green, blue, alpha = 1)
+//   alpha_hex = `Math.floor(alpha * 255).toString(16)`
+//   red_hex   = `Math.floor(red).toString(16)`
+//   green_hex = `Math.floor(green).toString(16)`
+//   blue_hex  = `Math.floor(blue).toString(16)`
+//   argb      = "#${alpha_hex}${red_hex}${green_hex}${blue_hex}"
+//   background none
+//   background rgba(red, green, blue, alpha)
+//   -ms-filter 'progid:DXImageTransform.Microsoft.gradient(startColorstr=${argb},endColorstr=${argb})'        // IE 8
+//       filter unquote('progid:DXImageTransform.Microsoft.gradient(startColorstr=${argb},endColorstr=${argb})')       // IE 6-7
+//   zoom       1

@@ -1,0 +1,28 @@
+doctype html
+// if lt IE 9
+  <html class="no-js lt-ie9" lang="en">
+<!--[if gte IE 9]><!-->
+html.no-js(lang="en")<!--<![endif]-->
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title Project
+    meta(name="viewport", content="width=device-width")
+    // if IE
+      script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    link(rel="stylesheet", href="main.css")
+  body
+    .main-wrapper
+      .main
+        .main-content-wrapper
+          .main-content
+          .sidebar-first
+          .sidebar-second
+    //- script.
+    //-   window.brunch = window.brunch || {};
+    //-   window.brunch['auto-reload'] = { enabled: true };
+    script(src="vendor/jquery/jquery-1.10.2.min.js")
+    //- script(src="vendor.js")
+    script(src="main.js")
+    //- script.
+    //-   require('initialize');
