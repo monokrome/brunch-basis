@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "jade-brunch": ">= 1.0 < 1.9",
+    "static-jade-brunch": ">= 1.0 < 1.9",
 
-    "normalize-css": "2.1.x",
     "stylus-brunch": ">= 1.0 < 1.9",
     "css-brunch": ">= 1.0 < 1.9",
     "clean-css-brunch": ">= 1.0 < 1.9",

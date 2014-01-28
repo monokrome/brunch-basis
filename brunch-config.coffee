@@ -6,11 +6,13 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'main.js': /^build/
+        'main.js':   /^build/
         'vendor.js': /^(?!build)/
 
     stylesheets:
-      joinTo: 'main.css'
+      joinTo:
+        'main.css':   /^build(\/|\\)styles(\/|\\)main/
+        'editor.css': /^build(\/|\\)styles(\/|\\)editor/
 
     templates:
       joinTo: 'templates.js'
@@ -23,3 +25,14 @@ exports.config =
     wrapper:    false
 
   sourceMaps: false
+
+  plugins:
+    cleancss:
+      processImport: false
+    jade:
+      options:
+        pretty: true
+    static_jade:
+      extension: '.static.jade'
+      path:      [/build/, /build(\/|\\)views/]
+      asset:     'public'
