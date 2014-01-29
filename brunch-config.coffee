@@ -1,24 +1,29 @@
 exports.config =
   paths:
     public:  'public'
-    watched: ['build', 'test']
+    watched: ['build', 'test', 'vendor']
 
   files:
     javascripts:
       joinTo:
         'main.js':   /^build/
-        'vendor.js': /^(?!build)/
+        'vendor.js': /^vendor/
+      order:
+        before: [
+          'build/base/scripts/wrapper-begin.ls'
+        ]
+        after: [
+          'build/main/scripts/main.ls'
+          'build/base/scripts/wrapper-end.ls'
+        ]
 
     stylesheets:
       joinTo:
-        'main.css':   /^build(\/|\\)styles(\/|\\)main/
-        'editor.css': /^build(\/|\\)styles(\/|\\)editor/
-
-    templates:
-      joinTo: 'templates.js'
+        'main.css':   /^build(\/|\\)main(\/|\\)styles/
+        'editor.css': /^build(\/|\\)editor(\/|\\)styles/
 
   conventions:
-    ignored: /^base/
+    ignored: /^build(\/|\\)base(\/|\\)styles/
 
   modules:
     definition: false
@@ -29,10 +34,10 @@ exports.config =
   plugins:
     cleancss:
       processImport: false
-    jade:
-      options:
+    jaded:
+      jade:
         pretty: true
-    static_jade:
-      extension: '.static.jade'
-      path:      [/build/, /build(\/|\\)views/]
-      asset:     'public'
+      staticPatterns: [
+        /^build(\/|\\)main(.+)\.static\.jade$/
+        /^build(\/|\\)(.+)\.static\.jade$/
+      ]
