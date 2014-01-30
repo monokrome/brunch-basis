@@ -19,7 +19,7 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'main.css':   /^build(\/|\\)main(\/|\\)styles/
+        'main.css':   /^build(\/|\\)site(\/|\\)styles/
         'editor.css': /^build(\/|\\)editor(\/|\\)styles/
 
   conventions:
@@ -35,9 +35,11 @@ exports.config =
     cleancss:
       processImport: false
     jaded:
+      filterPhp:       false
+      outputExtension: 'html'
       jade:
         pretty: true
       staticPatterns: [
-        /^build(\/|\\)main(.+)\.static\.jade$/
+        /^build(\/|\\)site(.+)\.static\.jade$/
         /^build(\/|\\)(.+)\.static\.jade$/
       ]
