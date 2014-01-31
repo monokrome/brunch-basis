@@ -1,7 +1,7 @@
 exports.config =
   paths:
     public:  'public'
-    watched: ['build', 'test', 'vendor']
+    watched: ['build/base', 'build/editor', 'build/site', 'test', 'vendor']
 
   files:
     javascripts:
