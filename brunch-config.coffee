@@ -10,20 +10,17 @@ exports.config =
         'vendor.js': /^vendor/
       order:
         before: [
-          'build/base/scripts/wrapper-begin.ls'
+          'build/base/scripts/_wrapper-begin.ls'
         ]
         after: [
           'build/main/scripts/main.ls'
-          'build/base/scripts/wrapper-end.ls'
+          'build/base/scripts/_wrapper-end.ls'
         ]
 
     stylesheets:
       joinTo:
-        'main.css':   /^build(\/|\\)site(\/|\\)styles/
-        'editor.css': /^build(\/|\\)editor(\/|\\)styles/
-
-  conventions:
-    ignored: /^build(\/|\\)base(\/|\\)styles/
+        'main.css':   /^build(\/|\\)site/
+        'editor.css': /^build(\/|\\)editor/
 
   modules:
     definition: false
@@ -35,10 +32,10 @@ exports.config =
     cleancss:
       processImport: false
     jaded:
-      filterPhp:       false
+      filterPhp:       true
       outputExtension: 'html'
-      jade:
-        pretty: true
+      # jade:
+      #   pretty: true
       staticPatterns: [
         /^build(\/|\\)site(.+)\.static\.jade$/
         /^build(\/|\\)(.+)\.static\.jade$/
