@@ -25,59 +25,14 @@ gradient(start_color, finish_color)
 // -----------------------------------------------------------------------------
 
 
-/**
- * Cross-browser float clearing.
- *
- * http://nicolasgallagher.com/micro-clearfix-hack/
- * http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
- */
-$clear
+//
+// Cross-browser float clearing.
+//
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
+//
+$group
   clearfix()
-
-
-// -----------------------------------------------------------------------------
-
-
-// @mixin background-clip-border()
-//   -webkit-background-clip border-box
-//      -moz-background-clip border
-//           background-clip border-box
-
-
-// -----------------------------------------------------------------------------
-
-
-// @mixin background-clip-padding()
-//   // Useful if you don't want a bg color from leaking outside the border.
-//   // http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
-//   -webkit-background-clip padding-box
-//      -moz-background-clip padding
-//           background-clip padding-box
-
-
-
-// -----------------------------------------------------------------------------
-
-
-// // http://css3please.com/
-// // http://css-tricks.com/snippets/css/useful-css3-less-mixins/#comment-135120
-// @mixin opacity($opacity)
-//   opacity: $opacity
-
-//   $ie_opacity: $opacity * 100
-
-//   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=${ie_opacity})"         // IE 8
-//       filter: "alpha(opacity=${ie_opacity})"                                           // IE 6-7
-
-// http://learnboost.github.io/stylus/docs/mixins.html
-// support-for-ie ?= true
-// opacity(n)
-//   opacity n
-//   if support-for-ie
-//     filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
-// #logo
-//   &:hover
-//     opacity 0.5
 
 
 // -----------------------------------------------------------------------------
@@ -91,9 +46,9 @@ $clear
 //   red_hex   = `Math.floor(red).toString(16)`
 //   green_hex = `Math.floor(green).toString(16)`
 //   blue_hex  = `Math.floor(blue).toString(16)`
-//   argb      = "#${alpha_hex}${red_hex}${green_hex}${blue_hex}"
+//   argb      = "##{alpha_hex}#{red_hex}#{green_hex}#{blue_hex}"
 //   background none
 //   background rgba(red, green, blue, alpha)
-//   -ms-filter 'progid:DXImageTransform.Microsoft.gradient(startColorstr=${argb},endColorstr=${argb})'        // IE 8
-//       filter unquote('progid:DXImageTransform.Microsoft.gradient(startColorstr=${argb},endColorstr=${argb})')       // IE 6-7
+//   -ms-filter "progid:DXImageTransform.Microsoft.gradient(startColorstr=#{argb},endColorstr=#{argb})"        // IE 8
+//       filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorstr=#{argb},endColorstr=#{argb})")       // IE 6-7
 //   zoom       1
