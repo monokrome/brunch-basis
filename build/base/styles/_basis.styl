@@ -23,14 +23,23 @@ gradient(start_color, finish_color)
 
 
 // -----------------------------------------------------------------------------
+//  Vertical Centering
+//  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+// -----------------------------------------------------------------------------
+
+$vertical-center
+  position  relative
+  top       50%
+  transform translateY(-50%)
 
 
+// -----------------------------------------------------------------------------
+//  Cross-browser float clearing.
 //
-// Cross-browser float clearing.
-//
-// http://nicolasgallagher.com/micro-clearfix-hack/
-// http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
-//
+//  http://nicolasgallagher.com/micro-clearfix-hack/
+//  http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
+// -----------------------------------------------------------------------------
+
 $group
   clearfix()
 
