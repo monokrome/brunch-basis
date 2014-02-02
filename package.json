@@ -28,7 +28,6 @@
     "uglify-js-brunch":  "1.7.x",
 
     "imageoptmizer-brunch": "0.0.4",
-    "after-brunch":         "0.0.5",
     "auto-reload-brunch":   "1.7.x"
   },
   "devDependencies": {

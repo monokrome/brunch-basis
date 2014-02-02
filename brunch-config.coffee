@@ -34,8 +34,6 @@ exports.config =
     jaded:
       filterPhp:       true
       outputExtension: 'html'
-      # jade:
-      #   pretty: true
       staticPatterns: [
         /^build(\/|\\)site(.+)\.static\.jade$/
         /^build(\/|\\)(.+)\.static\.jade$/
