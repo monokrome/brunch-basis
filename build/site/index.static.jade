@@ -23,16 +23,15 @@ html.no-js(lang="en")<!--<![endif]-->
 
     //- Auto-refresh when files change.
     script(src="path/to/reloadr.js")
-    script.
-      if (typeof Reloadr === 'object') {
-        Reloadr.go({
-          path: 'path/to/reloadr.php',
-          client: [
-            'main.css',
-            'main.js'
-          ],
-          server: [
-            'file/path/to/*.php',
-          ]
-        });
-      }
+    script
+      :coffeescript
+        if typeof Reloadr is 'object'
+          Reloadr.go
+            path: 'path/to/reloadr.php'
+            client: [
+              'path/to/main.css'
+              'path/to/main.js'
+            ]
+            server: [
+              'file/path/to/*.php'
+            ]
