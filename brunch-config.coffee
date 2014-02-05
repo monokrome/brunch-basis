@@ -38,3 +38,5 @@ exports.config =
         /^build(\/|\\)site(.+)\.static\.jade$/
         /^build(\/|\\)(.+)\.static\.jade$/
       ]
+    stylus:
+      imports: ['nib']
