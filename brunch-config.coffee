@@ -32,8 +32,8 @@ exports.config =
     cleancss:
       processImport: false
     jaded:
-      filterPhp:       true
-      outputExtension: 'html'
+      # filterPhp:       true
+      # outputExtension: 'php'
       staticPatterns: [
         /^build(\/|\\)site(.+)\.static\.jade$/
         /^build(\/|\\)(.+)\.static\.jade$/
