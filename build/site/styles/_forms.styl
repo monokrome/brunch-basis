@@ -4,7 +4,12 @@
 // =====
 
 
-label,
+//
+// Only give a pointer cursor for labels if they're linked to a form control.
+// http://davidwalsh.name/css-enhancements-user-experience#comment-9327
+//
+
+label[for],
 input[type="checkbox"],
 input[type="radio"],
 select
