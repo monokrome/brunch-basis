@@ -4,3 +4,19 @@
 // =====
 
 
+//
+// Pseudo-classes, especially on anchors, are ordered in a particular way.
+// http://meyerweb.com/eric/css/link-specificity.html
+//
+a
+  &, &:link
+    border-bottom   1px dotted #0C0
+    color           #0C0
+    text-decoration none
+  &:visited
+    color           #080
+    text-decoration none
+  &:hover, &:active, &:focus
+    border-bottom   1px solid #0F0
+    color           #0F0
+    text-decoration none
