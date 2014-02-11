@@ -1,12 +1,14 @@
 exports.config =
   paths:
     public:  'public'
+    # watched: ['build/base', 'build/editor', 'build/app', 'test', 'vendor']
     watched: ['build/base', 'build/editor', 'build/site', 'test', 'vendor']
 
   files:
     javascripts:
       joinTo:
-        'main.js':   /^build/
+        # 'main.js':   /^build(\/|\\)(base|app)/
+        'main.js':   /^build(\/|\\)(base|site)/
         'vendor.js': /^vendor/
       order:
         before: [

@@ -21,11 +21,7 @@ Rules are ordered according to criteria of subsequently increasing priority:
       5.  Hacks
       6.  Development-Oriented (e.g. diagnostic styles)
 
-  2.  Within the elements group order rules according to the order they are
-      listed in section 4 of the HTML Living Standard
-      (http://www.whatwg.org/specs/web-apps/current-work/#auto-toc-4).
-
-  3.  Within each group order rules according to the following:
+  2.  Within each group order rules according to the following:
       1.  Nesting order if there is one (e.g. '.main-wrapper' before '.main').
       2.  Rules with multiple selectors are grouped together by similar
           starting selectors.
@@ -33,31 +29,24 @@ Rules are ordered according to criteria of subsequently increasing priority:
       4.  Increasing specificity.
       5.  Classes and IDs are ordered by sibling order if there is one
           (e.g. '.main-header' before '.main-footer').
-      6.  Finally, alphabetical order.
-
-The layout of the markup may inform the final arrangement of the rules.
+      6.  HTML document order.
+      7.  Finally, alphabetical order.
 
 Rules with a single property may be written on a single line.  Rules that are
 in a contiguous series with similar properties may each be written on a single
 line.  Contiguous single-line rules should have their opening and closing
 braces line up together.
 
-Selectors are arranged similarly to rules and are generally listed one per line.
+Selectors are arranged similarly to rules.
 
 Properties are ordered alphabetically.
 
-Hex notation is used for opaque color values for sake of consistency.
+Hex notation is used for opaque color values.
 
 Shorthand notation is used when it serves readability.
 
 Percentages are used when defining font-size.
 http://www.kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/
-
-Some default values borrowed from YUI 3 Base.
-http://developer.yahoo.com/yui/3/cssbase
-
-Some typography defaults borrowed from Azbuka.
-http://www.vcarrer.com/2009/11/azbuka-css-typographical-base-rendering.html
 
 In HTML elements, attributes related to CSS are arranged in order of increasing
 CSS specificity (i.e. first "class" then "id" then "style").
@@ -79,12 +68,8 @@ CSS specificity (i.e. first "class" then "id" then "style").
 @import '_others'
 @import '_vendor-related'
 @import '_pages'
+@import '_shame'
 
-
-// -----------------------------------------------------------------------------
-//  Shame Styles
-//  http://csswizardry.com/2013/04/shame-css-full-net-interview/
-// -----------------------------------------------------------------------------
 
 // Components
 
