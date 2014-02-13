@@ -14,7 +14,7 @@
     "url": ""
   },
   "dependencies": {
-    "jaded-brunch": "1.7.x",
+    "jaded-brunch": "git+ssh://git@github.com:icylace/jaded-brunch.git",
 
     "stylus-brunch":    "1.8.x",
     "css-brunch":       "1.7.x",
@@ -27,8 +27,7 @@
     "javascript-brunch": "1.7.x",
     "uglify-js-brunch":  "1.7.x",
 
-    "imageoptmizer-brunch": "0.0.4",
-    "auto-reload-brunch":   "1.7.x"
+    "imageoptmizer-brunch": "0.0.4"
   },
   "devDependencies": {
   }

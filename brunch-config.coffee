@@ -15,7 +15,7 @@ exports.config =
           'build/base/scripts/_wrapper-begin.ls'
         ]
         after: [
-          'build/main/scripts/main.ls'
+          'build/site/scripts/site.ls'
           'build/base/scripts/_wrapper-end.ls'
         ]
 
