@@ -14,7 +14,7 @@
     "url": ""
   },
   "dependencies": {
-    "jaded-brunch": "git+ssh://git@github.com:icylace/jaded-brunch.git",
+    "jaded-brunch": "https://github.com/icylace/jaded-brunch/tarball/master",
 
     "stylus-brunch":    "1.8.x",
     "css-brunch":       "1.7.x",
