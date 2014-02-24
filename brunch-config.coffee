@@ -36,6 +36,6 @@ exports.config =
     jaded:
       # filterPhp:       true
       # outputExtension: 'php'
-      staticPatterns: [/\.static\.jade$/]
+      staticPatterns: [/^build(\/|\\)(.+)(\/|\\)(.+)\.static\.jade$/]
     stylus:
       imports: ['nib']
