@@ -5,13 +5,13 @@
   "description": "Description",
   "contributor": [
     {
-      "name": "",
+      "name":  "",
       "email": ""
     }
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url":  ""
   },
   "dependencies": {
     "jaded-brunch": "git+ssh://git@github.com:icylace/jaded-brunch.git",
