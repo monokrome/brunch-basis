@@ -5,28 +5,23 @@
   "description": "Description",
   "contributor": [
     {
-      "name":  "",
+      "name": "",
       "email": ""
     }
   ],
   "repository": {
     "type": "git",
-    "url":  ""
+    "url": ""
   },
   "dependencies": {
     "jaded-brunch": "git+ssh://git@github.com:icylace/jaded-brunch.git",
-
-    "stylus-brunch":    "1.8.x",
-    "css-brunch":       "1.7.x",
+    "stylus-brunch": "1.8.x",
+    "css-brunch": "1.7.x",
     "clean-css-brunch": "1.7.x",
-
-    "lodash":            "2.4.x",
-    "jquery":            "2.1.x",
     "LiveScript-brunch": "1.6.x",
-    "jshint-brunch":     "1.7.x",
+    "jshint-brunch": "1.7.x",
     "javascript-brunch": "1.7.x",
-    "uglify-js-brunch":  "1.7.x",
-
+    "uglify-js-brunch": "1.7.x",
     "imageoptmizer-brunch": "0.0.4"
   },
   "devDependencies": {

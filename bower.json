@@ -1,7 +1,14 @@
 {
-  "name":         "your-app",
-  "version":      "0.0.1",
-  "main":         "public/main.js",
-  "dependencies": {},
-  "overrides":    {}
+  "name": "your-app",
+  "version": "0.0.1",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "authors": [
+    "Your Name name <your@email.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "lodash": "~2.4.1"
+  }
 }

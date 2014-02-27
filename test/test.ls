@@ -1,2 +1,2 @@
-describe 'app', ->
+describe \app ->
   return
