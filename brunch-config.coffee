@@ -1,7 +1,7 @@
 exports.config =
   paths:
     public:  'public'
-    watched: ['build/app', 'build/base', 'build/editor', 'build/site', 'test', 'vendor']
+    watched: ['assets', 'build', 'test', 'vendor']
 
   files:
     javascripts:
@@ -10,11 +10,11 @@ exports.config =
         'vendor.js': /^(bower_components|vendor)/
       order:
         before: [
-          'build/base/scripts/_wrapper-begin.ls'
+          'build/base/scripts/wrapper-begin.ls'
         ]
         after: [
           'build/site/scripts/site.ls'
-          'build/base/scripts/_wrapper-end.ls'
+          'build/base/scripts/wrapper-end.ls'
         ]
 
     stylesheets:
