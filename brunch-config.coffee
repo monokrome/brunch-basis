@@ -1,15 +1,13 @@
 exports.config =
   paths:
     public:  'public'
-    # watched: ['build/base', 'build/editor', 'build/app', 'test', 'vendor']
-    watched: ['build/base', 'build/editor', 'build/site', 'test', 'vendor']
+    watched: ['build/app', 'build/base', 'build/editor', 'build/site', 'test', 'vendor']
 
   files:
     javascripts:
       joinTo:
-        # 'main.js':   /^build(\/|\\)(base|app)/
-        'main.js':   /^build(\/|\\)(base|site)/
-        'vendor.js': /^vendor/
+        'main.js':   /^build(\/|\\)(base|app|site)/
+        'vendor.js': /^(bower_components|vendor)/
       order:
         before: [
           'build/base/scripts/_wrapper-begin.ls'
@@ -23,6 +21,9 @@ exports.config =
       joinTo:
         'main.css':   /^build(\/|\\)site/
         'editor.css': /^build(\/|\\)editor/
+
+    # templates:
+    #   joinTo: 'templates.js'
 
   modules:
     definition: false

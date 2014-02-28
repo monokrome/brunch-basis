@@ -25,5 +25,11 @@
     "imageoptmizer-brunch": "0.0.4"
   },
   "devDependencies": {
+    "chai": "*",
+    "mocha-phantomjs": "*"
+  },
+  "scripts": {
+    "test": "mocha-phantomjs test/test-runner.html",
+    "test-prep": "jade test/*.jade ; lsc --bare --compile test/*.ls"
   }
 }

@@ -1,0 +1,21 @@
+html
+  head
+    meta(charset="UTF-8")
+    title Mocha Tests
+    link(rel="stylesheet", href="/usr/local/lib/node_modules/mocha/mocha.css")
+  body
+    #mocha
+    script(src="/usr/local/lib/node_modules/mocha/mocha.js")
+    script(src="/usr/local/lib/node_modules/chai/chai.js")
+    script.
+      mocha.ui('bdd');
+      mocha.reporter('html');
+      expect = chai.expect;
+    script(src="test.js")
+    script.
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      }
+      else {
+        mocha.run();
+      }
