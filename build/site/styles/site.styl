@@ -4,54 +4,52 @@
 // ==============
 
 
-/* -----------------------------------------------------------------------------
-
-Styles are written in a verbose fashion for ease of maintainability.
-Preprocessing will take care of producing production-ready CSS.
-
-Stylus is used for styles development.
-
-Rules are ordered according to criteria of subsequently increasing priority:
-
-  1.  Collect into groups ordered in the following way:
-      1.  Elements
-      2.  Pseudo-Selectors
-      3.  Classes
-      4.  IDs
-      5.  Hacks
-      6.  Development-Oriented (e.g. diagnostic styles)
-
-  2.  Within each group order rules according to the following:
-      1.  Nesting order if there is one (e.g. '.main-wrapper' before '.main').
-      2.  Rules with multiple selectors are grouped together by similar
-          starting selectors.
-      3.  Increasing cascade level.
-      4.  Increasing specificity.
-      5.  Classes and IDs are ordered by sibling order if there is one
-          (e.g. '.main-header' before '.main-footer').
-      6.  HTML document order.
-      7.  Finally, alphabetical order.
-
-Rules with a single property may be written on a single line.  Rules that are
-in a contiguous series with similar properties may each be written on a single
-line.  Contiguous single-line rules should have their opening and closing
-braces line up together.
-
-Selectors are arranged similarly to rules.
-
-Properties are ordered alphabetically.
-
-Hex notation is used for opaque color values.
-
-Shorthand notation is used when it serves readability.
-
-Percentages are used when defining font-size.
-http://www.kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/
-
-In HTML elements, attributes related to CSS are arranged in order of increasing
-CSS specificity (i.e. first "class" then "id" then "style").
-
------------------------------------------------------------------------------ */
+//
+// Styles are written in a verbose fashion for ease of maintainability.
+// Preprocessing will take care of producing production-ready CSS.
+//
+// Stylus is used for styles development.
+//
+// Rules are ordered according to criteria of subsequently increasing priority:
+//
+//   1.  Collect into groups ordered in the following way:
+//       1.  Elements
+//       2.  Pseudo-Selectors
+//       3.  Classes
+//       4.  IDs
+//       5.  Hacks
+//       6.  Development-Oriented (e.g. diagnostic styles)
+//
+//   2.  Within each group order rules according to the following:
+//       1.  Nesting order if there is one (e.g. '.main-wrapper' before '.main').
+//       2.  Rules with multiple selectors are grouped together by similar
+//           starting selectors.
+//       3.  Increasing cascade level.
+//       4.  Increasing specificity.
+//       5.  Classes and IDs are ordered by sibling order if there is one
+//           (e.g. '.main-header' before '.main-footer').
+//       6.  HTML document order.
+//       7.  Finally, alphabetical order.
+//
+// Rules with a single property may be written on a single line.  Rules that are
+// in a contiguous series with similar properties may each be written on a single
+// line.  Contiguous single-line rules should have their opening and closing
+// braces line up together.
+//
+// Selectors are arranged similarly to rules.
+//
+// Properties are ordered alphabetically.
+//
+// Hex notation is used for opaque color values.
+//
+// Shorthand notation is used when it serves readability.
+//
+// Percentages are used when defining font-size.
+// http://www.kyleschaeffer.com/best-practices/css-font-size-em-vs-px-vs-pt-vs/
+//
+// In HTML elements, attributes related to CSS are arranged in order of increasing
+// CSS specificity (i.e. first "class" then "id" then "style").
+//
 
 
 @import '../../base/styles/_basis'
