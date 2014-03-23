@@ -35,8 +35,9 @@ exports.config =
     cleancss:
       processImport: false
     jaded:
-      # filterPhp:       true
-      # outputExtension: 'php'
+      # module:          'jade-php'
+      # extension:       'php'
+      # clientExtension: 'html'
       staticPatterns:  [/^build(\/|\\)site(.+)\.static\.jade$/]
     stylus:
       imports: ['nib']

@@ -14,15 +14,16 @@
     "url": ""
   },
   "dependencies": {
-    "jaded-brunch": "git+ssh://git@github.com:icylace/jaded-brunch.git",
-    "stylus-brunch": "1.8.x",
-    "css-brunch": "1.7.x",
     "clean-css-brunch": "1.7.x",
-    "LiveScript-brunch": "1.6.x",
-    "jshint-brunch": "1.7.x",
+    "css-brunch": "1.7.x",
+    "jade-php": "0.1.1",
+    "jaded-brunch": "git+ssh://git@github.com:monokrome/jaded-brunch.git#feature/jade-module-option",
     "javascript-brunch": "1.7.x",
-    "uglify-js-brunch": "1.7.x",
-    "imageoptmizer-brunch": "0.0.4"
+    "jshint-brunch": "1.7.x",
+    "imageoptmizer-brunch": "0.0.4",
+    "LiveScript-brunch": "1.6.x",
+    "stylus-brunch": "1.8.x",
+    "uglify-js-brunch": "1.7.x"
   },
   "devDependencies": {
     "chai": "*",
