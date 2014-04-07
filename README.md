@@ -1,2 +1,2 @@
-brunch-basis
+Brunch Basis
 ============
